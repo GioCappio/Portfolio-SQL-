@@ -111,7 +111,7 @@ ORDER BY dea.location,  dea.date;
 -- My guess is that the data for the weekend are not reported, in the new vaccinations variables, and therefore, 
 -- the new variable does not count them. 
 
---All this does not count cause i want to show few things using the variable created.
+-- However, I want to create  a CTE with the new variable created.
 
 -- CTE
 
