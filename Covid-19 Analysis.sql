@@ -1,3 +1,5 @@
+-- Data from "Our World in Data"
+
 -- Some data exploration first
 
 SELECT  *
@@ -26,9 +28,9 @@ ORDER BY 1,2;
 
 -- Looking at population vs tot deaths for Italy and Bulgaria
 -- Shows the mortality rate, that is the number of deaths on the total poulation
--- Ne deriva che il tasso di letalità è una percentuale più consistente rispetto 
--- a quella del tasso di mortalità, che però restituisce un dato più rilevante per 
--- la valutazione dei rischi che comporta un’epidemia per tutta la popolazione.
+-- It follows that the lethality rate is a more substantial percentage than 
+-- than the mortality rate, which however gives a more relevant figure for 
+-- assessing the risks of an epidemic for the whole population.
 
 SELECT location, date, population, (total_deaths/population)*100 as Death_Percentage
 FROM `thermal-highway-331208.Covid.deaths`
